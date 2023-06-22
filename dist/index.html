@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wbpack Exercise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+<script defer src="runtime.js"></script><script defer src="main.js"></script></head>
+
+<body>
+    <header class="body-header">
+        <h1 class="body-header-h1">Leaderboard</h1>
+    </header>
+    <main class="body-main displayFlex-column">
+        <section class="body-main-section displayFlex-row">
+            <div class="body-main-section-div1">
+                <h2 class="body-main-section-div1-li-tittle">Recent scores <button class="refreshButton">Refresh</button></h2>
+                <ul class="body-main-section-div1-lu-list">
+                </ul>
+            </div>
+            <div class="body-main-section-div2">
+                <h2 class="body-main-section-div2-li-tittle">Add your score</h2>
+                <ul class="body-main-section-div2-lu-list">
+                    <li><input type="text" placeholder="your name" class="inputName"></li>
+                    <li><input type="number" placeholder="your score" class="inputScore"></li>
+                    <li><h3 id="inputError"></h3><button type="submit" class="inputButton">Submit</button></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="./src/index.js"></script>
+</body>
+</html>
