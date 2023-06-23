@@ -2,7 +2,7 @@
 // import { forEach } from "lodash";
 // import dataLeaderBoard from ".."
 const dataLeaderBoard = [];
-
+const gameID = 'GTAV';
 let previousData = [];
 
 // function to check if data had changed
@@ -22,7 +22,7 @@ const checkForChanges = (previousData, newData) => {
 };
 
 const getScore = async () => {
-  await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/GTAV/scores', {
+  await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameID}/scores`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
