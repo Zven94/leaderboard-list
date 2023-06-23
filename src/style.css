@@ -1,10 +1,13 @@
 body {
   width: 100%;
   font-family: 'Lato', 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #4942e4;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #f5f7f8;
 }
 
 .body-main {
@@ -30,7 +33,8 @@ body {
 
 .body-main-section-div1-lu-list {
   padding: 0;
-  border: 3px solid black;
+  border-radius: 7px;
+  box-shadow: 0 0 12px black;
 }
 
 .body-main-section-div1 {
@@ -51,7 +55,8 @@ li {
 }
 
 .makeMeGray {
-  background-color: gray;
+  color: #fff;
+  background-color: #9c97ff;
   margin-top: 5px;
   margin-bottom: 5px;
   padding-left: 10px;
@@ -63,6 +68,7 @@ li {
 }
 
 .body-main-section-div2-lu-list {
+  border-left: 2px solid #fff;
   padding: 0;
   width: 65%;
   display: flex;
@@ -87,5 +93,25 @@ input {
 }
 
 .inputButton {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  background-color: #4942e4;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #353097;
   margin-left: 110px;
+}
+
+.inputName,
+.inputScore {
+  border: none;
+}
+
+.refreshButton {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  background-color: #4942e4;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #353097;
 }
