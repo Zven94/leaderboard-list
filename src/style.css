@@ -82,7 +82,7 @@ input {
   display: none;
 }
 
-.inputError-R {
+.inputError-R::placeholder {
   color: red;
 }
 

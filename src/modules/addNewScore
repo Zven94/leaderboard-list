@@ -1,0 +1,41 @@
+import refreshList from "./updateScoreList";
+
+const inputName = document.querySelector('.inputName');
+const inputScore = document.querySelector('.inputScore');
+
+const addNewScore = async () => {
+
+
+  if (inputName.value && inputScore.value) {
+
+    fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/GTAV/scores', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        user: inputName.value,
+        score: inputScore.value,
+      }),
+    })
+      .then(response => {
+        console.log(body)
+      })
+      .catch(error => {
+      });
+
+  } else {
+    if (!inputName.value) {
+
+      inputName.classList.add('inputError-R');
+      inputName.placeholder = 'llene este campo'
+    } else if (!inputScore.value) {
+
+      inputScore.classList.add('inputError-R');
+      inputScore.placeholder = 'llene este campo'
+    }
+  }
+  await refreshList();
+};
+
+export default addNewScore;
