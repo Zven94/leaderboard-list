@@ -1,6 +1,5 @@
 import './style.css';
 import addNewScore from './modules/addNewScore';
-// import getScore from './modules/getScore';
 import refreshList from './modules/updateScoreList';
 
 const inputButton = document.querySelector('.inputButton');
